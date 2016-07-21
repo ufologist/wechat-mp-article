@@ -1,0 +1,208 @@
+/* 微信公众号图文网页默认样式 */
+* {
+    margin:0;
+    padding:0
+}
+html {
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%;
+    line-height:1.6
+}
+body {
+    -webkit-touch-callout:none;
+    font-family:-apple-system-font, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background-color:#f3f3f3;
+    line-height:inherit
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight:400;
+    font-size:16px
+}
+a {
+    color:#607fa6;
+    text-decoration:none
+}
+img {
+    height:auto!important
+}
+/* http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_combo2eb52b.css */
+/* 表格样式 */
+table {
+    margin-bottom:10px;
+    border-collapse:collapse;
+    display:table;
+    width:100%!important
+}
+td, th {
+    word-wrap:break-word;
+    word-break:break-all;
+    padding:5px 10px;
+    border:1px solid #ddd
+}
+caption {
+    border:1px dashed #ddd;
+    border-bottom:0;
+    padding:3px;
+    text-align:center
+}
+th {
+    border-top:2px solid #BBB;
+    background:#f7f7f7
+}
+
+/* 内容区域 */
+.rich_media_inner {
+    font-size:16px;
+    word-wrap:break-word;
+    -webkit-hyphens:auto;
+    -ms-hyphens:auto;
+    hyphens:auto
+}
+.rich_media_area_primary {
+    position:relative;
+    padding:20px 15px 15px;
+    background-color:#fff
+}
+.rich_media_area_primary:before {
+    content:" ";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:1px;
+    border-top:1px solid #e5e5e5;
+    -webkit-transform-origin:0 0;
+    transform-origin:0 0;
+    -webkit-transform:scaleY(0.5);
+    transform:scaleY(0.5);
+    top:auto;
+    bottom:-2px
+}
+.rich_media_area_primary .original_img_wrp {
+    display:inline-block;
+    font-size:0
+}
+.rich_media_area_primary .original_img_wrp .tips_global {
+    display:block;
+    margin-top:.5em;
+    font-size:14px;
+    text-align:right;
+    width:auto;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal
+}
+
+/* 图文标题 */
+.rich_media_title {
+    margin-bottom:10px;
+    line-height:1.4;
+    font-weight:400;
+    font-size:24px
+}
+
+/* 图文元数据: 时间/作者/公众号 */
+.rich_media_meta_list {
+    margin-bottom:18px;
+    line-height:20px;
+    font-size:0
+}
+.rich_media_meta_list em {
+    font-style:normal
+}
+.rich_media_meta {
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:8px;
+    margin-bottom:10px;
+    font-size:16px
+}
+.rich_media_meta_text {
+    color:#8c8c8c
+}
+span.rich_media_meta_nickname {
+    display:none
+}
+
+/* 图文封面图片显示在正文中 */
+.rich_media_thumb_wrp {
+    margin-bottom:6px
+}
+.rich_media_thumb_wrp .original_img_wrp {
+    display:block
+}
+.rich_media_thumb {
+    display:block;
+    width:100%
+}
+
+/* 图文的正文 */
+.rich_media_content {
+    overflow:hidden;
+    color:#3e3e3e
+}
+.rich_media_content * {
+    max-width:100%!important;
+    box-sizing:border-box!important;
+    -webkit-box-sizing:border-box!important;
+    word-wrap:break-word!important
+}
+.rich_media_content p {
+    clear:both;
+    min-height:1em;
+    white-space:pre-wrap
+}
+.rich_media_content em {
+    font-style:italic
+}
+.rich_media_content fieldset {
+    min-width:0
+}
+.rich_media_content .list-paddingleft-2 {
+    padding-left:30px
+}
+.rich_media_content blockquote {
+    margin:0;
+    padding-left:10px;
+    border-left:3px solid #dbdbdb
+}
+
+@media(min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2) {
+    .mm_appmsg .rich_media_inner, .mm_appmsg .rich_media_meta, .mm_appmsg .discuss_list, .mm_appmsg .rich_media_extra, .mm_appmsg .title_tips .tips {
+        font-size:17px
+    }
+    .mm_appmsg .meta_original_tag {
+        font-size:15px
+    }
+}
+@media(min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) {
+    .mm_appmsg .rich_media_title {
+        font-size:25px
+    }
+}
+@media screen and (min-width:1024px) {
+    .rich_media {
+        width:740px;
+        margin-left:auto;
+        margin-right:auto
+    }
+    .rich_media_inner {
+        padding:20px
+    }
+    body {
+        background-color:#fff
+    }
+}
+@media screen and (min-width:1025px) {
+    body {
+        font-family:"Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif
+    }
+    .rich_media {
+        position:relative
+    }
+    .rich_media_inner {
+        background-color:#fff;
+        padding-bottom:100px
+    }
+}

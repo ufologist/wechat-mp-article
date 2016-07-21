@@ -1,0 +1,212 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>高颜值的微信公众号图文消息排版</title>
+  <meta name="Keywords" content="公众号,中文排版"/>
+  <meta name="Description" content="高颜值的微信公众号图文消息排版"/>
+  <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+  <link rel="stylesheet" href="readability.css" />
+</head>
+<body>
+<div class="typo">
+    <h1>高颜值的微信公众号图文消息排版</h1>
+    <ul>
+        <li><a href="#overview">概述</a></li>
+        <li>
+            <a href="#block">块级元素</a>
+            <ul>
+                <li><a href="#p">段落和换行</a></li>
+                <li><a href="#header">标题</a></li>
+                <li><a href="#list">列表</a></li>
+                <li><a href="#blockquote">区块引用</a></li>
+                <li><a href="#precode">代码区块</a></li>
+                <li><a href="#hr">分隔线</a></li>
+                <li><a href="#table">表格</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#span">行内元素</a>
+            <ul>
+                <li><a href="#link">链接</a></li>
+                <li><a href="#em">强调</a></li>
+                <li><a href="#code">代码</a></li>
+                <li><a href="#img">图片及视频</a></li>
+                <li><a href="#otherInline">其他</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr/>
+
+    <h2 id="overview">概述</h2>
+    <p>提供一种<em>更适合阅读</em>的<strong>公众号图文排版样式</strong>，满足高颜值图文展示需求。它使用了<a href="https://github.com/sofish/typo.css">typo.css</a>和<a href="https://github.com/zmmbreeze/Entry.css">Entry.css</a>。它有如下优点：</p>
+    <ul>
+        <li>符合<a href="http://blog.justfont.com/2012/08/%E7%B6%B2%E9%A0%81%E6%8E%92%E7%89%88%EF%BC%9A%E6%B9%AF%E5%93%81%EF%BC%8D%EF%BC%8D%E5%9E%82%E7%9B%B4%E7%9A%84%E9%9F%BB%E5%BE%8B/" target="_blank">垂直的韵律(Vertical Rhythm)</a>，更适合阅读。</li>
+        <li>针对中文文章样式定制</li>
+    </ul>
+
+    <h2 id="block">块级元素</h2>
+
+    <h3 id="p">段落和换行</h3>
+    <p>段落的HTML只使用<code>div</code>和<code>p</code>。它们的行高、行首是否缩近两个中文字都可以自定义。换行也可以使用<code>br</code>标签实现。每行默认宽度可容纳40中文字左右，确保一行之内断句较少，适宜阅读。</p>
+    当然也有这种没有用标签包裹起来的文字。
+
+    <h3 id="header">标题</h3>
+    <p>文章内部标题共分为四种，使用<code>h1</code>标签作为一级标题，<code>h2</code>作为二级标题，<code>h3</code>标签作为三级标题，<code>h4</code>、<code>h5</code>或<code>h6</code>标签作为四级标题。</p>
+    <h1>样例</h1>
+    <h2>样例样例</h2>
+    <h3>样例样例样例</h3>
+    <h4>样例样例样例样例</h4>
+    <p>样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例样例</p>
+
+    <h3 id="list">列表</h3>
+    <p>列表样式分为有序列表<code>ol</code>和无序列表<code>ul</code>两种，这两种可以相互嵌套。没有对列表样式做过多的修改，还是使用浏览器默认样式。</p>
+
+    <p>列表的嵌套样式如下：</p>
+    <ul>
+        <li>第一层无序列表
+            <ul>
+                <li>第二层无序列表
+                    <ul>
+                        <li>第三层无序列表</li>
+                        <li>第三层无序列表</li>
+                    </ul>
+                </li>
+                <li>第二层无序列表</li>
+            </ul>
+        </li>
+        <li>第一层无序列表</li>
+    </ul>
+
+    <ol>
+        <li>第一层有序列表
+            <ol>
+                <li>第二层有序列表
+                    <ol>
+                        <li>第三层有序列表</li>
+                        <li>第三层有序列表</li>
+                    </ol>
+                </li>
+                <li>第二层有序列表</li>
+            </ol>   
+        </li>
+        <li>第一层有序列表</li>
+    </ol>
+
+    <ul>
+        <li>第一层无序列表
+            <ol>
+                <li>第二层有序列表
+                    <ul>
+                        <li>第三层无序列表</li>
+                        <li>第三层无序列表</li>
+                    </ul>
+                </li>
+                <li>第二层有序列表</li>
+            </ol>  
+        </li>
+        <li>第一层无序列表</li>
+    </ul>
+
+
+    <h3 id="blockquote">区块引用</h3>
+    <p>区块引用只使用<code>blockquote</code>标签。它们的样式没有过多地修饰，只是使用了不同于主文字体的字体，默认为楷体。并且左侧加了颜色比字体颜色稍淡的边框。区块引用的样例如下：</p>
+    <blockquote>
+    人生不过是一个行走的影子，一个在舞台上指手划脚的笨拙的怜人，登场片刻，便在无声无息中悄然退去，这是一个愚人所讲的故事，充满了喧哗和骚动，却一无所指。 <small><cite>麦克白</cite></small>
+    </blockquote>
+
+    <h3 id="precode">代码区块</h3>
+    <p>代码区块样式使用<code>pre</code>标签作为容器，且内部可选地嵌入<code>code</code>标签。微信公众号图文中不会自动代码高亮。</p>
+    <pre class="language-markup"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/prism.css&quot; /&gt;
+&lt;pre&gt;&lt;code class="language-javascript"&gt;
+console.log('Test');
+&lt;/code&gt;&lt;/pre&gt;
+&lt;script src=&quot;assets/prism.css&quot;&gt;&lt;/script&gt;</code></pre>
+
+    <h3 id="hr">分割线</h3>
+    <p>分割线样式只能使用hr标签。</p>
+    <hr>
+
+    <h3 id="table">表格</h3>
+    <p>表格的样式如下：</p>
+    <table>
+        <caption>浏览器</caption>
+        <thead>
+            <tr><th>浏览器型号</th><th>版本号</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>IE</td><td>9+</td></tr>
+            <tr><td>Chrome</td><td>14+</td></tr>
+            <tr><td>Firefox</td><td>4+</td></tr>
+            <tr><td>Safari</td><td>5+</td></tr>
+            <tr><td>Opera</td><td>11+</td></tr>
+            <tr><td>Mobile Safari</td><td>iOS 6+</td></tr>
+        </tbody>
+    </table>
+
+    <h2 id="span">行内元素</h2>
+
+    <h3 id="link">链接</h3>
+    <p>连接的样式可以自定义链接颜色，且鼠标hover之后下划线不会和中文粘连在一起。例如：<a href="#">普通链接</a>。</p>
+
+    <h3 id="em">强调</h3>
+    <p><b>强调的样式</b>可以使用<code>strong</code>、<code>u</code>、<code>b</code>或<code>em</code>标签，<code>strong</code>表示语义与样式双重强调，后两者表示样式上的强调。<code>b</code>、<code>bold</code>标签是加粗的样式，<code>em</code>标签则有<em>着重号</em>。<code>u</code>标签的样式是直线下划线，相邻之间也有<u>0.125em</u><u>的间隔</u></p>
+
+    <h3 id="code">代码</h3>
+    <p>代码的行内样式使用<code>code</code>标签，你也可以自定义字体和颜色。</p>
+
+    <h3 id="img">图片及视频</h3>
+    <p>图片样式对<code>img</code>标签没有特别设置，但是对<code>figure</code>标签做了设置。样例如下：</p>
+    <figure>
+        <img src="http://placehold.it/140x140" alt="这里是一段话" />
+        <figcaption>
+        这里是一段话
+        </figcaption>
+    </figure>
+    <p>对<code>img</code>标签做了（不超过容器的）限宽，如下：</p>
+    <img src="http://placehold.it/950x150" alt="这里是一段话" />
+    <p>同时也支持<code>video</code>标签。</p>
+
+    <h3 id="otherInline">其他行内样式</h3>
+    <ol>
+        <li>
+            <p><em>书名号</em>使用<code>cite</code>标签，例如：</p>
+            <blockquote><cite>冰与火之歌</cite>是一部很棒的魔幻小说！<br/>
+            <cite>Hamlet</cite>也是一部很棒的小说！</blockquote>
+        </li>
+        <li>
+            <p><em>缩写</em>使用<code>abbr</code>标签，例如：</p>
+            <blockquote><abbr title="javascript">js</abbr> 的全称是javascript，鼠标放上去看看title值。</blockquote>
+        </li>
+        <li>
+            <p><em>定义</em>使用<code>dfn</code>标签，例如：</p>
+            <blockquote><dfn>HTML</dfn> 是超文本标记语言</blockquote>
+        </li>
+        <li>
+            <p><em>标记</em>使用<code>mark</code>标签，例如：</p>
+            <blockquote>在这句话里面把<mark>这几个字</mark>高亮下吧～</blockquote>
+        </li>
+        <li>
+            <p><em>行内引用</em>使用<code>q</code>标签，例如：</p>
+            <blockquote>在这句话里面把<q>这几个字</q>引用下吧～</blockquote>
+        </li>
+        <li>
+            <p><em>旁注</em>使用<code>small</code>标签，例如：</p>
+            <blockquote>
+                单人间 399 元 <small>含早餐，不含税</small>
+            </blockquote>
+        </li>
+        <li>
+            <p><em>上下标</em>使用<code>sup</code>标签作下标、<code>sub</code>标签作上标，例如：</p>
+            <blockquote>
+                10<sup>5</sup> 与 a<sub>1</sub><sup>2</sup>
+            </blockquote>
+        </li>
+    </ol>
+    <hr>
+    <p><a href="index.html">微信公众号图文消息默认样式</a></p>
+</div>
+</body>
+</html>

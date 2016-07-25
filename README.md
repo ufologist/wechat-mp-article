@@ -21,3 +21,30 @@
 * 样式中不要有字体设置, 否则复制到图文消息的编辑器中, 会造成样式被丢弃
 * 复制嵌套多级的 `ul/ol` 结构到图文消息的编辑器中, 会变成最多只有两级的结构
 * `pre` 内容复制到图文消息编辑器中没有保留换行, 会造成所有内容都挤成一行
+
+## 其他资源
+### 图文编辑
+* 微信排版工具集 https://next.36kr.com/posts/collections/259
+* i排版 http://www.ipaiban.com/
+* 秀米 http://xiumi.us
+* 135编辑器 http://www.135editor.com/
+* 新媒体排版 http://paiban.xmt.cn/
+* 51排版 http://51paiban.com
+* 荔枝助理 http://www.lizhi.in/Home/Edit/index
+* 构思编辑器 http://www.gorse.com/
+* 易点编辑器 http://wxedit.yead.net/
+* 微小宝编辑器 http://www.wxb.com/editor
+* 如何排版微信公众平台的文章？ https://www.zhihu.com/question/23640203
+
+### 图片设计
+* 创客贴 - 极简的平面设计工具 https://www.chuangkit.com/
+* 易启秀 - 轻设计 http://www.eqxiu.com/main/print/create
+* Canva https://www.canva.com/
+* BeFunky https://www.befunky.com/create/designer/
+
+### 视频
+* 腾讯视频
+* 优酷视频
+
+### 资源导航
+* SDC 设计师网站导航 http://hao.uisdc.com/

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="readability.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mditor/mditor.css">
+</head>
+<body>
+    <h1>高颜值的微信公众号图文消息编辑器</h1>
+    <textarea name="editor" id="editor">
+# 标题
+
+**粗体** *斜体* <u>下划线</u> ~~删除线~~
+
+> 引用内容
+
+```
+<!-- 代码块 -->
+<link rel="stylesheet" href="assets/prism.css" />
+<pre><code class="language-javascript">
+console.log('Test');
+</code></pre>
+<script src="assets/prism.css"></script>
+```
+
+1. 有序列表1
+2. 有序列表2
+
+
+* 无序列表1
+* 无序列表2
+
+[链接](http://baidu.com "链接提示")
+
+![图片](http://placehold.it/140x140 "图片提示")
+
+分隔线
+
+---
+
+## 表格
+
+column1 | column2 | column3
+------- | ------- | -------
+column1 | column2 | column3
+column1 | column2 | column3
+column1 | column2 | column3
+	</textarea>
+    <script src="mditor/mditor.min.js"></script>
+    <script src="http://cdn.bootcss.com/marked/0.3.5/marked.min.js"></script>
+	<script>
+    // 覆盖原有方法, 因为我要修改 class 名称
+    Mditor.prototype.getHTML = function () {
+        var self = this;
+        // XXX 由于 Mditor 对代码库做了高亮样式造成复制到图文编辑器后, 所有文字都变成了一行
+        // 因此暂时还是使用 marked 来直接生成代码块的内容(没有做高亮了)
+        // var value = self.parser.parse(self.ui.editor.val());
+        var value = marked(self.ui.editor.val());
+        return '<div class="markdown-body typo">' + value + '</div>';
+    };
+    var mditor = new Mditor("#editor",{
+        height:window.innerHeight - 43 - 50,
+        fixedHeight:true
+    });
+    // 修改下帮助按钮的链接地址
+    mditor.toolBar.get('help').handler = function() {
+        window.open('https://github.com/ufologist/wechat-mp-article', 'mditor');
+        return this;
+    };
+    mditor.toolBar.update();
+    mditor.openPreview();
+	</script>
+</body>
+</html>

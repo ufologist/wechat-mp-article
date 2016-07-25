@@ -1,0 +1,369 @@
+/**
+ * mditor , 一个简洁、易于集成、方便扩展、期望舒服的编写 markdown 的编辑器
+ * @version v0.1.4
+ * @homepage http://houfeng.net/mditor
+ * @license MIT
+ * @author Houfeng
+ * @email admin@xhou.net
+ * @blog http://houfeng.net
+ */
+/*
+
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
+*/
+
+/* XXX 由于使用代码高亮样式后有问题, 暂时不使用 */
+/*
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #f0f0f0;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs,
+.hljs-subst,
+.hljs-tag .hljs-title,
+.nginx .hljs-title {
+  color: black;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-constant,
+.hljs-parent,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-name,
+.haml .hljs-symbol,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.hljs-addition,
+.hljs-flow,
+.hljs-stream,
+.bash .hljs-variable,
+.pf .hljs-variable,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.tex .hljs-special,
+.erlang_repl .hljs-function_or_atom,
+.asciidoc .hljs-header,
+.markdown .hljs-header,
+.coffeescript .hljs-attribute,
+.tp .hljs-variable {
+  color: #800;
+}
+
+.smartquote,
+.hljs-comment,
+.hljs-annotation,
+.diff .hljs-header,
+.hljs-chunk,
+.asciidoc .hljs-blockquote,
+.markdown .hljs-blockquote {
+  color: #888;
+}
+
+.hljs-number,
+.hljs-date,
+.hljs-regexp,
+.hljs-literal,
+.hljs-hexcolor,
+.smalltalk .hljs-symbol,
+.smalltalk .hljs-char,
+.go .hljs-constant,
+.hljs-change,
+.lasso .hljs-variable,
+.makefile .hljs-variable,
+.asciidoc .hljs-bullet,
+.markdown .hljs-bullet,
+.asciidoc .hljs-link_url,
+.markdown .hljs-link_url {
+  color: #080;
+}
+
+.hljs-label,
+.ruby .hljs-string,
+.hljs-decorator,
+.hljs-filter .hljs-argument,
+.hljs-localvars,
+.hljs-array,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-pseudo,
+.hljs-pi,
+.haml .hljs-bullet,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-envvar,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.nginx .hljs-built_in,
+.tex .hljs-formula,
+.erlang_repl .hljs-reserved,
+.hljs-prompt,
+.asciidoc .hljs-link_label,
+.markdown .hljs-link_label,
+.vhdl .hljs-attribute,
+.clojure .hljs-attribute,
+.asciidoc .hljs-attribute,
+.lasso .hljs-attribute,
+.coffeescript .hljs-property,
+.hljs-phony {
+  color: #88f;
+}
+
+.hljs-keyword,
+.hljs-id,
+.hljs-title,
+.hljs-built_in,
+.css .hljs-tag,
+.hljs-doctag,
+.smalltalk .hljs-class,
+.hljs-winutils,
+.bash .hljs-variable,
+.pf .hljs-variable,
+.apache .hljs-tag,
+.hljs-type,
+.hljs-typename,
+.tex .hljs-command,
+.asciidoc .hljs-strong,
+.markdown .hljs-strong,
+.hljs-request,
+.hljs-status,
+.tp .hljs-data,
+.tp .hljs-io {
+  font-weight: bold;
+}
+
+.asciidoc .hljs-emphasis,
+.markdown .hljs-emphasis,
+.tp .hljs-units {
+  font-style: italic;
+}
+
+.nginx .hljs-built_in {
+  font-weight: normal;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.lasso .markup,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5;
+}
+*/
+
+/**
+ Mditor 公共样式
+ **/
+
+.mditor {
+	overflow: hidden;
+	position: relative;
+}
+/**
+ 工具条样式
+ **/
+
+.mditor .head {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	cursor: default;
+	outline: 0;
+	position: relative;
+	zoom: 1;
+	margin: 0;
+	padding: 0px;
+	border: 1px solid #CCC;
+	border-bottom: 0;
+	border-radius: 3px 3px 0 0;
+	background: #f1f1f1;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .4);
+	background-color: #f3f3f3;
+	background-image: -moz-linear-gradient(top, #f5f5f5, #efefef);
+	background-image: -ms-linear-gradient(top, #f5f5f5, #efefef);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#efefef));
+	background-image: -webkit-linear-gradient(top, #f5f5f5, #efefef);
+	background-image: -o-linear-gradient(top, #f5f5f5, #efefef);
+	background-image: linear-gradient(top, #f5f5f5, #efefef);
+	background-repeat: repeat-x;
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#efefef', GradientType=0);
+	padding-right: 70px;
+}
+.mditor .toolbar,
+.mditor .control {
+	margin: 0px;
+	padding: 4px;
+	height: 100%;
+	position: relative;
+}
+.mditor .control {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 70px;
+	text-align: right;
+}
+.mditor .toolbar .fa,
+.mditor .control .fa {
+	height: 27px;
+	width: 27px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 14px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	margin: 1px;
+	color: #888;
+	transition: .2s;
+	-webkit-transition: .2s;
+	position: relative;
+	vertical-align: middle;
+}
+.mditor .toolbar .fa:hover,
+.mditor .toolbar .fa:active,
+.mditor .control .fa:hover,
+.mditor .control .fa:active,
+.mditor .toolbar .fa.on,
+.mditor .control .fa.on {
+	color: #444;
+	border: 1px solid #ddd;
+}
+.mditor .toolbar .fa:active,
+.mditor .control .fa:active,
+.mditor .toolbar .fa.on,
+.mditor .control .fa.on {
+	background-color: #ebebeb;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .1) inset;
+}
+/**
+ 编辑器主体样式
+ **/
+
+.mditor .body {
+	position: relative;
+}
+.mditor .editor {
+	position: relative;
+	display: inline-block;
+	border: none !important;
+	outline: none !important;
+	width: 100%;
+	height: 100%;
+	min-height: 60px;
+	resize: none !important;
+	background-color: transparent !important;
+	margin: 0px;
+	padding: 8px 1% 8px 1%;
+	color: #333;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.viewer {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 0px;
+	display: none;
+}
+/**
+ 高度计算样式
+ **/
+
+.mditor .calc {
+	position: relative;
+	height: 0px;
+	font-size: 0px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	visibility: hidden;
+}
+.mditor .calc .editor {
+	height: auto;
+}
+.mditor.fixed .calc .editor,
+.mditor.fixed .viewer {
+	height: 100% !important;
+}
+/**
+ 打开预览时样式
+ **/
+.mditor.preview .editor {
+	width: 48%;
+}
+.mditor.preview .viewer {
+	width: 50%;
+}
+.mditor.preview .editor {
+	border-right: 1px solid #ddd !important;
+	border-bottom-right-radius: 0px !important;
+}
+.mditor.preview .viewer {
+	display: block;
+	overflow: visible;
+}
+/**
+ 全屏样式
+ **/
+
+.mditor.fullscreen {
+	position: fixed;
+	margin: 0px !important;
+	left: 0px !important;
+	top: 0px !important;
+	width: 100% !important;
+	height: 100% !important;
+	min-width: 100% !important;
+	min-height: 100% !important;
+	max-width: 100% !important;
+	max-height: 100% !important;
+	z-index: 999999;
+	padding: 5px;
+	background-color: #f8f8f8;
+	border-radius: 0px;
+}
+/**
+ 全屏和预览时的 control 样式
+ **/
+
+.mditor.fullscreen i.fa[data-cmd="toggleFullScreen"],
+.mditor.preview i.fa[data-cmd="togglePreview"] {
+	color: #444;
+	border: 1px solid #ddd;
+	background-color: #ebebeb;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .1) inset;
+}
+/**
+ 固定高度时的样式
+ **/
+
+.mditor.fixed .viewer,
+.mditor.fullscreen .viewer {
+	overflow: auto;
+}
+/**
+ 无 head 部份样式
+ **/
+
+.mditor.toolbar-hidden .head {
+	display: none;
+}
+.mditor.toolbar-hidden .body,
+.mditor.toolbar-hidden .editor,
+.mditor.toolbar-hidden .viewer {
+	border-radius: 3px;
+}

@@ -48,3 +48,7 @@
 
 ### 资源导航
 * SDC 设计师网站导航 http://hao.uisdc.com/
+
+### 版权声明
+* [自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）](https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh)
+* [Choose a License](https://creativecommons.org/choose/)

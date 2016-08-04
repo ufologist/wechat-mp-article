@@ -24,31 +24,36 @@
 
 ## 其他资源
 ### 图文编辑
-* 微信排版工具集 https://next.36kr.com/posts/collections/259
-* i排版 http://www.ipaiban.com/
-* 秀米 http://xiumi.us
-* 135编辑器 http://www.135editor.com/
-* 新媒体排版 http://paiban.xmt.cn/
-* 51排版 http://51paiban.com
-* 荔枝助理 http://www.lizhi.in/Home/Edit/index
-* 构思编辑器 http://www.gorse.com/
-* 易点编辑器 http://wxedit.yead.net/
-* 微小宝编辑器 http://www.wxb.com/editor
-* 如何排版微信公众平台的文章？ https://www.zhihu.com/question/23640203
+* [新媒体排版](http://paiban.xmt.cn/)
+* [i排版](http://www.ipaiban.com/)
+* [秀米](http://xiumi.us)
+* [135编辑器](http://www.135editor.com/)
+* [51排版](http://51paiban.com)
+* [荔枝助理](http://www.lizhi.in/Home/Edit/index)
+* [构思编辑器](http://www.gorse.com/)
+* [易点编辑器](http://wxedit.yead.net/)
+* [微小宝编辑器](http://www.wxb.com/editor)
+* [微信排版工具集](https://next.36kr.com/posts/collections/259)
+* [如何排版微信公众平台的文章？](https://www.zhihu.com/question/23640203)
 
 ### 图片设计
-* 创客贴 - 极简的平面设计工具 https://www.chuangkit.com/
-* 易启秀 - 轻设计 http://www.eqxiu.com/main/print/create
-* Canva https://www.canva.com/
-* BeFunky https://www.befunky.com/create/designer/
+* [创客贴 - 极简的平面设计工具](https://www.chuangkit.com/)
+* [易启秀 - 轻设计](http://www.eqxiu.com/main/print/create)
+* [Canva](https://www.canva.com/)
+* [BeFunky](https://www.befunky.com/create/designer/)
 
 ### 视频
-* 腾讯视频
-* 优酷视频
+* [腾讯视频](http://v.qq.com/)
+* [优酷视频](http://www.youku.com/)
+* [Windows上制作视频的软件有哪些？推荐最佳的视频制作软件！](https://www.zhihu.com/question/21552138)
+  * [爱剪辑](http://www.aijianji.com/)
+  * [Online video converter to MP4](http://video.online-convert.com/convert-to-mp4)
+  * [爱美刻](http://meikevideo.com/ "视频在线剪辑制作专家 一键制作宝宝幼儿成长纪念册/婚礼微电影/婚礼视频")
+* [8个免费视频剪辑软件，你，值得拥有](http://weibo.com/ttarticle/p/show?id=2309404002643507826566)
 
 ### 资源导航
 * SDC 设计师网站导航 http://hao.uisdc.com/
 
-### 版权声明
+## 版权声明
 * [自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）](https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh)
 * [Choose a License](https://creativecommons.org/choose/)

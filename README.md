@@ -35,6 +35,7 @@
 * [微小宝编辑器](http://www.wxb.com/editor)
 * [微信排版工具集](https://next.36kr.com/posts/collections/259)
 * [如何排版微信公众平台的文章？](https://www.zhihu.com/question/23640203)
+* [online-markdown](https://github.com/barretlee/online-markdown "使用微信公众号编辑器有一个十分头疼的问题——粘贴出来的代码，格式错乱，而且特别丑。这块编辑器能够解决这个问题")
 
 ### 图片设计
 * [创客贴 - 极简的平面设计工具](https://www.chuangkit.com/)
@@ -52,7 +53,7 @@
 * [8个免费视频剪辑软件，你，值得拥有](http://weibo.com/ttarticle/p/show?id=2309404002643507826566)
 
 ### 资源导航
-* SDC 设计师网站导航 http://hao.uisdc.com/
+* [SDC 设计师网站导航](http://hao.uisdc.com/)
 
 ## 版权声明
 * [自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）](https://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh)

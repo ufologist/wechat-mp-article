@@ -139,6 +139,7 @@ pre {
   border: 1px solid #ddd;
   padding: 1em 1.5em;
   display: block;
+  overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 

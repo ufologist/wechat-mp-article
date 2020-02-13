@@ -23,6 +23,15 @@
 * `pre` 内容复制到图文消息编辑器中没有保留换行, 会造成所有内容都挤成一行
 
 ## 其他资源
+
+### 开源
+
+* [markdown-nice](https://github.com/mdnice/markdown-nice)
+* [md](https://github.com/doocs/md)
+* [md4wxpub](https://github.com/i2Echo/md4wxpub)
+* [WXEditor](https://github.com/wweggplant/WXEditor) 类似市面上的公众号文章排版编辑器
+* [雷劈网开源微信编辑器](http://wxeditor.leipi.org/)
+
 ### 图文编辑
 * [新媒体排版](http://paiban.xmt.cn/)
 * [i排版](http://www.ipaiban.com/)

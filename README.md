@@ -7,7 +7,7 @@
   微信公众号的图文消息编辑器中提供了一般的富文本编辑功能, 例如粗体, 斜体, 颜色, 背景等等, 但默认的样式排版下不太适合阅读大段文字. 另外还提供了引用(`<blockquote>`)和表格(`<table>`)的默认样式.
 * [高颜值的微信公众号图文消息排版](https://ufologist.github.io/wechat-mp-article/readability.html)
 
-  使用了适合中文排版的 CSS 样式库, 让微信公众号图文消息阅读起来赏心悦目.
+  使用了适合中文排版的 CSS 样式库, 让微信公众号图文消息阅读起来赏心悦目. 现在推荐使用 [赫蹏](https://sivan.github.io/heti/)
 
   基于 [typo.css](https://github.com/sofish/typo.css) 和 [Entry.css](https://github.com/zmmbreeze/Entry.css) 来实现排版效果, 例如 [typo.css 排版实例](http://typo.sofi.sh/#section2), [博文demo](http://zencode.in/Entry.css/demo.html), [散文demo](http://zencode.in/Entry.css/word.html)
 
